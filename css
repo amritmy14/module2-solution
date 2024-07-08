@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.mainbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+span{
+    display: block;
+    text-align: center;
+}
+.box{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(152, 148, 148);
+    border: 3px solid black;
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-align: center;
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .box.box1 {
+        width: 46%;
+    }
+    .box.box2 {
+        width: 46%;
+    }
+    .box.box3 {
+        width: 95%;
+    }
+}
+@media (max-width: 767px){
+    .box.box1 , .box.box2 , .box.box3 {
+        width: 95%;
+    }
+}
+#sbox1{
+    width: 35%;
+    height: 40px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgb(211, 111, 128);
+    text-align: center;
+    float: right;
+    font-size: 30px;
+    display: inline-block;
+}
+#sbox2{
+    width: 35%;
+    height: 40px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgb(210, 80, 80);
+    text-align: center;
+    float: right;
+    font-size: 30px;
+    color: white;
+}
+#sbox3{
+    width: 35%;
+    height: 40px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgb(216, 207, 127);
+    text-align: center;
+    float: right;
+    font-size: 30px;
+}
+.text-container {
+    clear: both;
+}
